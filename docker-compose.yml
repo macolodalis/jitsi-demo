@@ -182,7 +182,7 @@ services:
     prosody:
         image: jitsi/prosody:${JITSI_IMAGE_VERSION:-stable-9457-2}
         restart: ${RESTART_POLICY:-unless-stopped}
-        expose:
+        ports:
             - '${XMPP_PORT:-5222}'
             - '${PROSODY_S2S_PORT:-5269}'
             - '5347'
