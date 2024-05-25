@@ -400,7 +400,7 @@ services:
         restart: ${RESTART_POLICY:-unless-stopped}
         ports:
             - '${JVB_PORT:-10000}:${JVB_PORT:-10000}/udp'
-            - '127.0.0.1:${JVB_COLIBRI_PORT:-8080}:8080'
+            - '127.0.0.1:${JVB_COLIBRI_PORT:-4443}:4443'
         volumes:
             - ~/.jitsi-meet-cfg/jvb:/config:Z
         environment:
