@@ -309,7 +309,7 @@ services:
         networks:
             meet.jitsi:
                 aliases:
-                    - ${XMPP_SERVER:-xmpp.meet.jitsi}
+                    - ${XMPP_SERVER:-xmpp.meetup.updevin.com}
 
     # Focus component
     jicofo:
